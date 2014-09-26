@@ -3,6 +3,8 @@ import sys
 
 
 def _get_locals():
+    # TODO: Import a "~/.pydo" file, and run get_locals() in it to get
+    # additional, user-defined locals.
     import pprint, re, sys
     import os
     from os import path
@@ -46,3 +48,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+# TODO: allow looping over null-separated strings. (--null output.)
